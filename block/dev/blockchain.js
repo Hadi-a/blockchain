@@ -1,7 +1,9 @@
 var sha256=require('sha256')
 function Blockchain (){
+    
     this.chain=[]
     this.mempool=[]
+    this.CreateNewBlock();
 }
 
 Blockchain.prototype.CreateNewBlock=function(){
